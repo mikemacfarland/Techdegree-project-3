@@ -1,0 +1,41 @@
+/* UNIVERSAL SELECTOR */
+*{
+    display:border-box;
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* TYPE SELECTORS */
+
+body{
+    font-size: 1em;
+    margin:0;
+}
+
+header{
+    background:#183a64;
+    padding:1.8em 0;
+    color: white;
+    text-align: center;
+}
+
+h1{
+    font-size: 1.5em;
+    margin:0;
+}
+
+legend{
+    border-top: solid black .125em;
+    width:100%;
+}
+
+
+/* CLASS SELECTORS */
+
+.contact-info label,
+.contact-info input{
+    display:block;
+    width: 100%;
+}
+
+
+/* ID SELECTORS */

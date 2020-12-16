@@ -6,26 +6,27 @@
         <link rel="stylesheet" href="css/normalize.css"> 
         <link rel="stylesheet" href="css/styles.css">
       
-        <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-      
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Libre+Baskerville&display=swap" rel="stylesheet">
     </head>
     
     <body>
         <header>
-            <h1>The Code Review</h1>
+            <h1>THE CODE REVIEW</h1>
+        </header>
+
+    <div>
+        <section class="intro">
             <h2>Signup for our newsletter</h2>
             <p>Get the latest news on how your code is doing right in your inbox</p>
-        </header>
+        </section>
         
         <form>
+            <fieldset class="contact-info">
             <legend>
                 <h2>Contact Information</h2>
             </legend>
-            
-            <fieldset>
+
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="name">
 
@@ -102,38 +103,41 @@
 
             </fieldset>
 
-            <fieldset>
+            <fieldset class="newsletter">
                 <legend>
                     <h2>Newsletter</h2>
                     <p>Select the newsletters you would like to recieve.</p>
                 </legend>
 
-                <label for="HTML. News">HTML. News</label>  
                 <input type="checkbox" id="HtML. News" name="HTML. News">
+                <label for="HTML. News">HTML. News</label><br>
                 
-                <label for="CSS News">CSS News</label>
                 <input type="checkbox" id="CSS News" name="CSS News">
-
-                <label for="Javascript News">Javascript News</label>
+                <label for="CSS News">CSS News</label><br>
+                
                 <input type="checkbox" id="Javascript News" name="Javascript News">
+                <label for="Javascript News">Javascript News</label><br>
             </fieldset>
 
-            <fieldset>
-                <legend><h3>Newsletter format</h3></legend>
-
-                <label for="HTML">HTML.</label>
+            <fieldset class="newsletter">
+                <legend>
+                    <h3>Newsletter format</h3>
+                </legend>
+                
                 <input type="checkbox" id="HTML." name="HTML.">
+                <label for="HTML">HTML.</label><br>
 
-                <label for="Plain text">Plain text</label>
                 <input type="checkbox" id="Plain text" name="Plain text">
+                <label for="Plain text">Plain text</label><br>
 
-                <label for="Other topics">Other topics youd like to hear about</label>
+                <label for="Other topics">Other topics youd like to hear about</label><br>
                 <textarea id="Other topics" name="Other topics"></textarea>
                 
                 <button type="Sign Up">Sign Up</button>
             </fieldset>
         </form>
-        
+    </div>
+
         <footer>
             <!-- insert copyright info here  -->
         </footer>

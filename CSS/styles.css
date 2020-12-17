@@ -12,7 +12,7 @@ body{
 }
 
 header{
-    background:#183a64;
+    background:#0e223b;
     padding:1.8em 0;
     color: white;
     text-align: center;
@@ -23,19 +23,89 @@ h1{
     margin:0;
 }
 
+fieldset{
+    padding: .4em 0;
+}
+
 legend{
     border-top: solid black .125em;
     width:100%;
 }
 
+input,
+textarea,
+select,
+button{
+    box-sizing: border-box;
+    padding: 1em;
+    border:none;
+    border-radius:.2em;
+    background-color:#ececec;
+}
+
+label,
+input,
+textarea,
+select,
+button{
+    color:grey;
+    margin:.5em 0;
+}
+
+textarea{
+    resize:vertical;
+}
 
 /* CLASS SELECTORS */
 
+.wrapper{
+    width:90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.intro{
+    padding-bottom: 1em;
+    text-align:center;
+}
+
+.newsletter p{
+    margin-bottom:.5em;
+}
+
+/* ID SELECTORS */
+
+#zipcode{
+    width:50%;
+}
+
+#sign_up{ /* BUTTON */
+    margin-top: 1.5em;
+    background-color: #198d9c;
+    color: white;
+    font-weight: 800;
+    letter-spacing: .065em;
+}
+
+#sign_up:hover{
+    transition: .5s;
+    opacity:75%;
+    transform: scale(1.0125);
+}
+
+#sign_up:active{
+    transition: .25s;
+    margin-left:auto;
+    margin-right:auto;
+    transform: scale(1.025);
+}
+
+/* MULTIPLE SELECTOR GROUPS? */
 .contact-info label,
-.contact-info input{
+.contact-info input,
+textarea,
+button,
+#state{
     display:block;
     width: 100%;
 }
-
-
-/* ID SELECTORS */

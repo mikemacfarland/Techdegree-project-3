@@ -6,9 +6,10 @@
 
 /* TYPE SELECTORS */
 
-body{
+main{
+    max-width: 768px;
     font-size: 1em;
-    margin:0;
+    margin:auto;
 }
 
 header{
@@ -25,11 +26,6 @@ h1{
 
 fieldset{
     padding: .4em 0;
-}
-
-legend{
-    border-top: solid black .125em;
-    width:100%;
 }
 
 input,
@@ -56,6 +52,32 @@ textarea{
     resize:vertical;
 }
 
+footer{
+    color: grey;
+    font-size: .8em;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1em;
+
+}
+
+/* CLASS TYPE SELECTORS */
+
+.contact-info legend,
+.newsletter legend{
+    border-top: solid black .125em;
+    width:100%;
+}
+
+.intro p{
+    padding-bottom: 1.25em;
+    border-bottom: solid black .25em;
+}
+
+.newsletter p{
+    margin-bottom:.5em;
+}
+
 /* CLASS SELECTORS */
 
 .wrapper{
@@ -65,12 +87,8 @@ textarea{
 }
 
 .intro{
-    padding-bottom: 1em;
+    padding-bottom: .2em;
     text-align:center;
-}
-
-.newsletter p{
-    margin-bottom:.5em;
 }
 
 /* ID SELECTORS */
@@ -79,7 +97,12 @@ textarea{
     width:50%;
 }
 
-#sign_up{ /* BUTTON */
+#other-topics{
+    display:block;
+    margin:1.5em 0 1em;
+}
+
+#sign-up{ /* BUTTON */
     margin-top: 1.5em;
     background-color: #198d9c;
     color: white;
@@ -87,20 +110,20 @@ textarea{
     letter-spacing: .065em;
 }
 
-#sign_up:hover{
+#sign-up:hover{
     transition: .5s;
     opacity:75%;
     transform: scale(1.0125);
 }
 
-#sign_up:active{
+#sign-up:active{
     transition: .25s;
     margin-left:auto;
     margin-right:auto;
     transform: scale(1.025);
 }
 
-/* MULTIPLE SELECTOR GROUPS? */
+/* MULTIPLE SELECTOR TYPES */
 .contact-info label,
 .contact-info input,
 textarea,
@@ -108,4 +131,45 @@ button,
 #state{
     display:block;
     width: 100%;
+}
+
+/* @MEDIA STYLES */
+
+@media screen and (min-width: 768px){
+ 
+    body{
+        font-size:1.1em;
+        margin-right:auto;
+        margin-left:auto;
+    }
+
+    .contact-info label{
+        display: table;
+        width:25%;
+        float: left;
+    }
+
+    .contact-info input,
+    .contact-info select{
+        display: table;
+        width:75%;
+        float: left;
+    }
+
+    #state{
+        width:35%;
+        margin-right:40%;
+    }
+
+    #zipcode{
+        width:20%;
+    }
+
+    .clearfix:after{
+        content: "";
+        display: table;
+        clear: both;
+
+
+    }
 }

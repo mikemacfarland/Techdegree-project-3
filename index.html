@@ -29,17 +29,20 @@
                 </legend>
 
                     <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="required">
+                    <input required type="text" id="name" name="name" placeholder="required">
 
                     <label for="email">Email Adress</label>
-                    <input type="email" id="email" name="email" placeholder="required">
+                    <input required type="email" id="email" name="email" placeholder="required">
 
-                    <label for="Phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="555-555-5555">
 
-                    <label for="adress">Street Adress</label>
-                    <input type="text" id="adress" name="adress">
-                    
+                    <label for="adress1">Street Adress</label>
+                    <input type="text" id="adress1" name="adress1">
+
+                    <label for="adress2">Appt/Office #</label>
+                    <input type="text" id="adress2" name="adress2">
+
                     <label for="city">City</label>
                     <input type="text" id="city" name="city">
 
@@ -107,17 +110,18 @@
                 <fieldset class="newsletter">
                     <legend>
                         <h2>Newsletter</h2>
-                        <p>Select the newsletters you would like to recieve.</p>
                     </legend>
+                        
+                    <p>Select the newsletters you would like to recieve.</p>
 
-                    <input type="checkbox" id="HTML._news" value="newsletter" name="HTML._News">
-                    <label for="HTML. News">HTML. News</label><br>
+                    <input type="checkbox" id="HTML._news" value="HTML._News" name="newsletter">
+                    <label for="HTML._news">HTML. News</label><br>
                     
-                    <input type="checkbox" id="CSS_news" value="newsletter" name="CSS_News">
-                    <label for="CSS News">CSS News</label><br>
+                    <input type="checkbox" id="CSS_news" value="CSS_News" name="newsletter">
+                    <label for="CSS_news">CSS News</label><br>
                     
-                    <input type="checkbox" id="javascript_news" value="newsletter" name="javascript_News">
-                    <label for="javascript News">Javascript News</label><br>
+                    <input type="checkbox" id="javascript_news" value="javascript_News" name="newsletter">
+                    <label for="javascript_news">Javascript News</label><br>
                 </fieldset>
 
                 <fieldset class="newsletter-format">
@@ -125,16 +129,16 @@
                         <h3>Newsletter format</h3>
                     </legend>
                     
-                    <input type="radio" id="HTML." name="newsletter_format" value="HTML.">
-                    <label for="HTML">HTML.</label><br>
+                    <input type="radio" id="HTML."  value="HTML." name="newsletter_format">
+                    <label for="HTML.">HTML.</label><br>
 
-                    <input type="radio" id="plain_text" name="newsletter_format" value="plain_text">
+                    <input type="radio" id="plain_text" value="plain_text" name="newsletter_format">
                     <label for="plain_text">Plain text</label><br>
 
                     <label id="other-topics" for="other_topics">Other topics youd like to hear about</label>
                     <textarea id="other_topics" name="other_topics"></textarea>
                     
-                    <button id="sign-up"type="sign-Up">Sign Up</button>
+                    <button id="sign-up" type="submit">Sign Up</button>
                 </fieldset>
             </form>
         </div>

@@ -1,6 +1,5 @@
 /* UNIVERSAL SELECTOR */
 *{
-    display:border-box;
     font-family: 'Libre Baskerville', serif;
 }
 
@@ -10,6 +9,7 @@ main{
     max-width: 768px;
     font-size: 1em;
     margin:auto;
+    padding: 1.5em 0 1em;
 }
 
 header{
@@ -28,6 +28,14 @@ fieldset{
     padding: .4em 0;
 }
 
+input:focus,
+select:focus,
+textarea:focus
+{
+    transition: 1s;
+    background-color:#c7e0ff;
+}
+
 input,
 textarea,
 select,
@@ -44,7 +52,7 @@ input,
 textarea,
 select,
 button{
-    color:grey;
+    color:#6e6e6e;
     margin:.5em 0;
 }
 
@@ -53,12 +61,14 @@ textarea{
 }
 
 footer{
-    color: grey;
+    color:#6e6e6e;
     font-size: .8em;
     font-style: italic;
     text-align: center;
-    margin-bottom: 1em;
+}
 
+section h2{
+    margin-top: 0;
 }
 
 /* CLASS TYPE SELECTORS */
@@ -75,7 +85,8 @@ footer{
 }
 
 .newsletter p{
-    margin-bottom:.5em;
+    margin-bottom: 1em;
+    color:#6e6e6e;
 }
 
 /* CLASS SELECTORS */
@@ -102,7 +113,9 @@ footer{
     margin:1.5em 0 1em;
 }
 
-#sign-up{ /* BUTTON */
+/* BUTTON */
+
+#sign-up{ 
     margin-top: 1.5em;
     background-color: #198d9c;
     color: white;
@@ -123,7 +136,15 @@ footer{
     transform: scale(1.025);
 }
 
+/* ATTRIBUTE SELECTORS */
+
+input[id="name"]::placeholder,
+input[type="email"]::placeholder{
+    text-align: right;
+}
+
 /* MULTIPLE SELECTOR TYPES */
+
 .contact-info label,
 .contact-info input,
 textarea,
@@ -137,6 +158,11 @@ button,
 
 @media screen and (min-width: 768px){
  
+    h1{
+        font-size: 2.5em;
+        margin:0;
+    }
+
     body{
         font-size:1.1em;
         margin-right:auto;
@@ -144,6 +170,7 @@ button,
     }
 
     .contact-info label{
+        margin-top: 1.5em;
         display: table;
         width:25%;
         float: left;

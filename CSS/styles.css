@@ -5,11 +5,18 @@
 
 /* TYPE SELECTORS */
 
+body{
+    background-color: #ececec;
+}
+
 main{
+    width: 80%;
     max-width: 768px;
     font-size: 1em;
-    margin:auto;
-    padding: 1.5em 0 1em;
+    margin:1em auto;
+    padding: 1.5em 5% 1em;
+    background-color: white;
+    border-radius: 10px;
 }
 
 header{
@@ -65,6 +72,7 @@ footer{
     font-size: .8em;
     font-style: italic;
     text-align: center;
+    margin-top: 1em;
 }
 
 section h2{
@@ -90,12 +98,6 @@ section h2{
 }
 
 /* CLASS SELECTORS */
-
-.wrapper{
-    width:90%;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 .intro{
     padding-bottom: .2em;
@@ -177,15 +179,11 @@ button,
     }
 
     .contact-info input,
-    .contact-info select{
+    .contact-info select,
+    #state{
         display: table;
         width:75%;
         float: left;
-    }
-
-    #state{
-        width:35%;
-        margin-right:40%;
     }
 
     #zipcode{

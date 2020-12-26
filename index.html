@@ -14,9 +14,8 @@
         <header>
             <h1>THE CODE REVIEW</h1>
         </header>
-    <main>
+    <main class="wrapper">
 
-        <div class="wrapper">
             <section class="intro">
                 <h2>Signup for our newsletter</h2>
                 <p>Get the latest news on how your code is doing right in your inbox</p>
@@ -24,9 +23,9 @@
             
             <form>
                 <fieldset class="contact-info clearfix">
-                <legend>
-                    <h2>Contact Information</h2>
-                </legend>
+                    <legend>
+                        <h2>Contact Information</h2>
+                    </legend>
 
                     <label for="name">Full Name</label>
                     <input required type="text" id="name" name="name" placeholder="required">
@@ -124,10 +123,8 @@
                     <label for="javascript_news">Javascript News</label><br>
                 </fieldset>
 
-                <fieldset class="newsletter-format">
-                    <legend>
-                        <h3>Newsletter format</h3>
-                    </legend>
+                <div class="newsletter-format">     
+                    <h3>Newsletter format</h3>
                     
                     <input type="radio" id="HTML."  value="HTML." name="newsletter_format">
                     <label for="HTML.">HTML.</label><br>
@@ -139,9 +136,8 @@
                     <textarea id="other_topics" name="other_topics"></textarea>
                     
                     <button id="sign-up" type="submit">Sign Up</button>
-                </fieldset>
+                </div>
             </form>
-        </div>
 
             <footer>Copyright The Code Review</footer>
 
